@@ -60,12 +60,6 @@ public class CarControls : MonoBehaviour {
         if (track1) {
             //Buttons that control car 1.
             if (car1) {
-                if (RightVerticalValue > 0) { //foward Left Joystick
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue);
-                }
-                if (RightVerticalValue < 0) { //backward Left Joystick
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue);
-                }
                 if (Input.GetKey(KeyCode.W)) { //forward keyboard
                     carRB.AddForce(transform.forward * carSpeed);
                 }
@@ -88,12 +82,6 @@ public class CarControls : MonoBehaviour {
 
             //Buttons that control car 2.
             if (car2) {
-                if (RightVerticalValue2 > 0) {
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue2 * Time.deltaTime);
-                }
-                if (RightVerticalValue2 < 0) {
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue2 * Time.deltaTime);
-                }
                 if (Input.GetKey(KeyCode.UpArrow)) {
                     carRB.AddForce(transform.forward * carSpeed);
                 }
@@ -119,12 +107,6 @@ public class CarControls : MonoBehaviour {
 
         if (track2) {
             if (car3) {
-                if (RightVerticalValue > 0) { //foward Left Joystick
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue);
-                }
-                if (RightVerticalValue < 0) { //backward Left Joystick
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue);
-                }
                 if (Input.GetKey(KeyCode.W)) { //forward keyboard
                     carRB.AddForce(transform.forward * carSpeed);
                 }
@@ -147,12 +129,6 @@ public class CarControls : MonoBehaviour {
 
             //Buttons that control car 2.
             if (car4) {
-                if (RightVerticalValue2 > 0) {
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue2 * Time.deltaTime);
-                }
-                if (RightVerticalValue2 < 0) {
-                    carRB.AddForce(transform.forward * carSpeed * RightVerticalValue2 * Time.deltaTime);
-                }
                 if (Input.GetKey(KeyCode.UpArrow)) {
                     carRB.AddForce(transform.forward * carSpeed);
                 }
