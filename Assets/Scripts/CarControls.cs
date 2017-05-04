@@ -17,8 +17,6 @@ public class CarControls : MonoBehaviour {
     public bool track1;
     public bool track2;
 
-    private ParticleEmitter p1;
-    private ParticleEmitter p2;
     private Rigidbody carRB;
     private float LeftHorizontalValue;
     private float RightVerticalValue;
