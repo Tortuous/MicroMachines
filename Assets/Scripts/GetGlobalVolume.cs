@@ -7,7 +7,6 @@ public class GetGlobalVolume : MonoBehaviour {
     private float globalVolume;
     public void Update()
     {
-        globalVolume = PlayerPrefs.GetFloat("GlobalVolume");
-        gameObject.GetComponent<AudioSource>().volume = globalVolume;
+        gameObject.GetComponent<AudioSource>().volume = SetGlobalVolume.curVolume;
     }
 }
